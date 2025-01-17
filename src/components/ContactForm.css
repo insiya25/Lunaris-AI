@@ -1,0 +1,357 @@
+.contact-form-maincont {
+    position: relative;
+    /* Needed for stacking context */
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 25px;
+    /* Adds space below for the form */
+    overflow: hidden;
+}
+
+.contact-form-bg-wrapper {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-87%, -51%);
+    /* Adjust vertical offset for better centering */
+    /* z-index: -1; */
+    /* Moves the image behind everything else */
+}
+
+.contact-form-bg-image {
+    width: 170%;
+    /* Increase the size of the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure the entire image fits */
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form-wrapper {
+    position: relative;
+    /* Context for drops */
+    display: inline-block;
+    /* Prevents form-wrapper from stretching */
+    margin-top: 300px;
+    /* Adjusted to move the form lower */
+    /* Moves the form down by 20px */
+}
+
+.myform {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1.5em;
+    width: 350px;
+    /* Reduced width */
+    height: 400px;
+    /* Reduced height */
+    /* Adjusted size */
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    /* Prevents overflow of content */
+}
+
+.myform p {
+    font-weight: 900;
+    color: #141B34;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    /* Adjusted font size */
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.myform a {
+    text-decoration: none;
+    color: #141B34;
+    font-size: 10px;
+}
+
+.myform a:hover {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2509803922);
+}
+
+.myform a:active {
+    text-shadow: none;
+}
+
+.myform input {
+    background: transparent;
+    width: 100%;
+    /* Make inputs take full width */
+    padding: 0.8em;
+    /* Reduced padding */
+    margin-bottom: 1.5em;
+    /* Adjusted margin */
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    /* color: #141B34; */
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.myform input:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+.myform input[type=email]:focus,
+.myform input[type=password]:focus {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+.myform input[type=button] {
+    width: 30%;
+    /* Make button take full width */
+    /* height: 35px; */
+    /* Adjusted button height */
+    font-size: 1rem;
+    margin-top: 10px;
+    /* Added spacing above the button */
+    color: #141B34;
+}
+
+.myform input[type=button]:hover {
+    cursor: pointer;
+}
+
+.myform input[type=button]:active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.myform:hover {
+    margin: 4px;
+}
+
+.myform::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #141B34;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form-drops {
+    position: absolute;
+    /* Keeps drops positioned relative to the form-wrapper */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Prevents interaction with drops */
+}
+
+.contact-form-drop {
+    position: absolute;
+    /* Positions each drop relative to form-wrapper */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.contact-form-drop-1 {
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    left: -40px;
+}
+
+.contact-form-drop-2 {
+    height: 70px;
+    width: 70px;
+    bottom: -20px;
+    right: -10px;
+}
+
+.contact-form-drop-3 {
+    height: 100px;
+    width: 100px;
+    bottom: 120px;
+    right: -90px;
+
+}
+
+.contact-form-drop-4 {
+    height: 120px;
+    width: 120px;
+    top: -60px;
+    right: -60px;
+
+}
+
+.contact-form-drop-5 {
+    height: 60px;
+    width: 60px;
+    bottom: 170px;
+    left: -50px;
+    /* z-index: -1; */
+}
+
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.myform input {
+    background: transparent;
+    width: 100%;
+    /* padding: 1em; */
+    /* margin-bottom: 1em; */
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: #141B34;
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.myform textarea {
+    padding-left: 10px;
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: #141B34;
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+
+    /* Make container a grid */
+    .contact-form-maincont {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+        /* Stack the image and form vertically */
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
+    .contact-form-bg-wrapper {
+        display: none;
+    }
+
+    .contact-form-bg-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        /* Add space between image and form */
+    }
+
+    .contact-form-wrapper {
+        margin-top: 0;
+        /* Adjust margin for the form */
+    }
+
+    .myform {
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .myform input,
+    .myform textarea {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1.5em auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .contact-form-container {
+        padding: 0 10px;
+    }
+
+    .contact-form-bg-wrapper {
+        display: none;
+    }
+
+    .contact-form-bg-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        /* Add some space below the image */
+    }
+
+    .contact-form-wrapper {
+        margin-top: 0;
+    }
+
+    .myform {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .myform input,
+    .myform textarea {
+        width: 80%;
+        margin: 0 0 1em 0;
+        padding: 10px;
+    }
+
+    .myform p {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .myform input[type=button] {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
