@@ -2,6 +2,8 @@
 
 Welcome to Lunaris, a lunar-themed web application powered by the Gemini API! 🚀🌕 This project is inspired by the Gemini API, and the goal was to build my own version of Gemini. As I’m deep into AI and Deep Learning, I initially aimed to train a model from scratch. However, given the limitations of my laptop, I decided to integrate the Gemini API and focus on building a functional, responsive, and engaging web app.
 
+![Lunaris](lunaris1.png)  
+
 ## Features
 - **Gemini API Integration**: Powered by Gemini API, Lunaris offers the ability to interact with generative AI and provide dynamic responses.
 - **User Authentication**: Users can create accounts, log in via GitHub and Google, and manage their profiles with usernames and profile pictures.
@@ -11,6 +13,8 @@ Welcome to Lunaris, a lunar-themed web application powered by the Gemini API! �
 - **User Management**: Users can set configurations such as username, profile picture, and manage their login options.
 - **Email Notifications**: Integrated EmailJS for sending emails (e.g., confirmation emails or notifications).
 - **Smooth Routing & Components**: Built using ReactJS with a variety of dependencies like React Router for routing, Counterup for animations, and React Markdown for rendering markdown content.
+
+![Lunaris](lunaris4.png)  
   
 ## Tech Stack
 - **Frontend**: 
