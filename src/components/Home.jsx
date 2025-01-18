@@ -172,7 +172,7 @@ function Home() {
                             <h1 className="display-4 text-white mb-4 animated slideInRight">Unlock the Power of AI Conversations</h1>
                             <p className="text-white mb-4 animated slideInRight">Engage with our advanced LLM model, Lunaris, and experience intelligent, seamless, and human-like conversations like never before.</p>
                             <a href="#aboutus" className="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
-                            <a onClick={handleNavigation} className="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <a onClick={handleNavigation2} className="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
                         <div className="col-lg-6 align-self-end text-center text-lg-end">
                             <img className="img-fluid" src={assets.hero_img} alt="" />
