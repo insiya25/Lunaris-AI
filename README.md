@@ -35,8 +35,6 @@ Welcome to Lunaris, a lunar-themed web application powered by the Gemini API! �
 - **API Response Formatting**: The raw response from the Gemini API presented some formatting issues. However, I applied various techniques and methods to convert the raw response into a cleaner, more readable format.
 - **UI Design**: The biggest fun and challenge were creating a futuristic "robotic" design. I wanted the UI to be smooth, modern, and responsive with seamless animations. It’s still a work in progress, but I’m happy with how it’s come together!
 
-## Live Demo
-Check out the live version of Lunaris here: [Lunaris AI Web App](https://lunarisai.vercel.app/)
 
 ## Current Status
 Lunaris is a work in progress, and while the core functionality is in place, there is still a lot to implement. As I continue to learn and grow, I’ll keep adding new features and improvements.
